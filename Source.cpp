@@ -3,18 +3,14 @@
 using namespace std;
 int main() {
 	setlocale(LC_ALL, "rus");
-	
+
 	//#1
 	/*int hp;
-	bool res;
 	cin >> hp;
-	if (hp > 0) {
-		res = 1;
-	}
-	else {
-		res = 0;
-	}
-	cout << boolalpha << res;*/
+	bool a = hp > 0;;
+	cout << boolalpha << a;*/
+
+
 
 
 	//#2
@@ -45,7 +41,7 @@ int main() {
 	/*int x;
 	int y;
 	cin >> x;
-	if (x>0) 
+	if (x>0)
 	{
 		y = sqrt(x-2);
 	}
@@ -77,7 +73,7 @@ int main() {
 	int troom;
 	int tstreet;
 	cin >> troom >> tstreet;
-	if (troom > 20 && tstreet > troom )
+	if ( (troom > 20 && tstreet > troom) || (troom > 20 && tstreet> 20  && troom == tstreet) )
 	{
 		cout << "ac on";
 	}
@@ -89,7 +85,5 @@ int main() {
 	{
 		cout << "open window";
 	}
-
-
-
+	
 }
